@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width= device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecommerce.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com"><!--google font size-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>RedStore | Ecommerce web design</title>
+</head>
+<body>
+    <!-----------------------------------------Header & background buttom------------------------------------------------------------>
+    <div class = "Header">
+    <div class = "nav-bar-container"><!--the container of nav bar-->
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/Asset 4.png" alt="logo" width="125 px"></a><!--Logo will be on top left coner-->
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="product.html">product</a> </li>
+                    <li> <a href="#">about</a> </li>
+                    <li> <a href="#">Contact</a> </li>
+                    <li> <a href="account.html">Account</a> </li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width ="30px" height="30px" ></a>
+            <img src="images/menu.png" class ="menu-icon" onclick="menutoggle()"><!--onclick is to make this element ckickabke-->
+           </div> 
+<div class ="row"><!--key point for image and logo-->
+<div class = "col-2"><!--why use this class as there are two element 1. paragrpg 2.image-->
+    <h1>Give your workout <br>A new style</h1>
+    <p>Success isn't always about greatness. It's about consistency. <br>Consistent hard work gains sucess. Greatness will come</p>
+    <a href="#" class="btn">Explore Now &#8594 </a><!--&#8594 is html icon code-->
+</div>
+<div class = "col-2">
+   <img src="images/woman-running.png">
+</div>
+</div>
+</div>
+</div>
+
+<!-------------------------------feature categories------------------------------------->
+<div class ="categories">
+    <div class = "small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/category-1.jpg" >
+            </div>
+            <div class="col-3">
+                <img src="images/category-2.jpg" >
+            </div>
+            <div class="col-3">
+                <img src="images/category-3.jpg" >
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-------------------------------feature Products------------------------------------->
+<div class = "small-container">
+<h2 class ="title">feature Products</h2>
+<div class ="row"><!---we need multi column--->
+    <div class ="col-4">
+        <img src="images/product-1.jpg"><!---product name--->
+        <h4>Red printed T-shirt</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+        <p>$50.00</p>
+    </div>
+    <div class ="col-4">
+        <img src="images/product-2.jpg"><!---product name--->
+        <h4>Red printed T-shirt</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+        <p>$50.00</p>
+    </div>
+    <div class ="col-4">
+        <img src="images/product-3.jpg"><!---product name--->
+        <h4>Red printed T-shirt</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+        </div>
+        <p>$50.00</p>
+    </div>
+    <div class ="col-4">
+        <img src="images/product-4.jpg"><!---product name--->
+        <h4>Red printed T-shirt</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+        <p>$50.00</p>
+    </div>
+    </div>
+<h2 class ="title">Latest Products</h2>
+<div class ="row">
+    <div class ="col-4">
+        <img src="images/product-5.jpg"><!---product name--->
+        <h4>Red printed T-shirt</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+        <p>$44.00</p>
+    </div>
+    <div class ="col-4">
+        <img src="images/product-6.jpg"><!---product name--->
+        <h4>Red printed T-shirt</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+        <p>$38.00</p>
+    </div>
+    <div class ="col-4">
+        <img src="images/product-7.jpg"><!---product name--->
+        <h4>Red printed T-shirt</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+        </div>
+        <p>$109.00</p>
+    </div>
+    <div class ="col-4">
+        <img src="images/product-8.jpg"><!---product name--->
+        <h4>Red printed T-shirt</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+        <p>$60.00</p>
+    </div>
+
+    </div>
+    <div class ="row">
+        <div class ="col-4">
+            <img src="images/product-9.jpg"><!---product name--->
+            <h4>Red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class ="col-4">
+            <img src="images/product-10.jpg"><!---product name--->
+            <h4>Red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class ="col-4">
+            <img src="images/product-11.jpg"><!---product name--->
+            <h4>Red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$109.00</p>
+        </div>
+        <div class ="col-4">
+            <img src="images/product-12.jpg"><!---product name--->
+            <h4>Red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        </div>
+</div>
+<!--------------offer----------------->
+<div class="offer">
+    <div class="small-container"><!------------1080 px---------------->
+        <div class="row"><!--item has to include this class in order to make element flexible-->
+            <div class="col-2"><!--why use this class as there are two element 1. paragrpg 2.image-->
+                <img src="images/exclusive.png" Class ="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Availible on RedStore</p>
+                <h1>Smart Band 4</h1>
+                <small>The Mi Smart Band 4 features a 39.9% larger(than Mi Band 3) AMOLED color full-touch display with adjustable brightness,so everything is clear as can be.</small><br>
+                <a href="" class = "btn">Buy Now &#8594 </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------testimonial-------------------->
+<div class="testimonial">
+
+    <div class="small-container">
+        <div class="row">
+<!--------we have 3 colunm here----------->
+
+            <div class="col-3"><!---acommodate 3 photo you can see the white colunm background was create by this class-->
+                <i class="fa fa-quote-left"></i>
+                <p>In a world where everyone is carrying around a small computer in their pocket, it's no surprise that video has become one of the most popular ways to consume content.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="images/user-1.png">
+                <h4>Judy</h4>
+            </div>
+            <div class="col-3"><!----second testimonial----->
+                <i class="fa fa-quote-left"></i>
+                <p>In a world where everyone is carrying around a small computer in their pocket, it's no surprise that video has become one of the most popular ways to consume content.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="images/user-2.png">
+                <h4>Simon</h4>
+            </div>
+            <div class="col-3"><!----third testimonial----->
+                <i class="fa fa-quote-left"></i>
+                <p>In a world where everyone is carrying around a small computer in their pocket, it's no surprise that video has become one of the most popular ways to consume content.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="images/user-3.png">
+                <h4>Christana</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------brands-------->
+<div class="brand">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5"><!----as you can expact that there will have 5 column------>
+<img src="images/logo-godrej.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-oppo.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-coca-cola.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-paypal.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-philips.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------footer-------------->
+<div class="footer">
+    <div class="container">
+<!--------------there are four different colunm------------->
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo"><!----So that's why we need to group them up to specified the position---->
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/Asset 5.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Link</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr><!------Horizontal sttraight line------------->
+        <p class ="copyright">Copyright 2020 - Jayden Design</p>
+        
+    </div>
+</div>
+<!------js for toggle menu------------->
+<script>
+    /*MenuItems still is a variable*/
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight ="0px";
+
+    function menutoggle()//when you click the menu bottom it will toggle.when you clicked the value is 0px then it will be auto extent to 200px
+    {
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+            //auto drop down the menu
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>

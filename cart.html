@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width= device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecommerce.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com"><!--google font size-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>All Product - RedStore | Ecommerce web design</title>
+</head>
+<body>
+    <!--------------------Header & background buttom--------------------------> 
+    <div class = "nav-bar-container"><!--the container of nav bar-->
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/Asset 4.png" alt="logo" width="125 px"></a><!--Logo will be on top left coner-->
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="product.html">product</a> </li>
+                    <li> <a href="#">about</a> </li>
+                    <li> <a href="#">Contact</a> </li>
+                    <li> <a href="account.html">Account</a> </li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width ="30px" height="30px" ></a>
+            <img src="images/menu.png" class ="menu-icon" onclick="menutoggle()">
+           </div> 
+
+</div>
+    <!--------------------Cart item detail-------------------------->
+    <!------------>
+    <div class="small-container cart-page">    <!-----follow the standard background------->
+        <table>
+            <tr><!---title head------->
+                <th>Product</th>
+                <th>Qantity</th>
+                <th>Subtotal</th>
+            </tr><!---individual row------->
+            <tr>
+                <td>
+                    <div class="car-info">
+                        <img src="images/buy-1.jpg">
+                        <div>
+                            <p>Red printed T-shirt</p><!---if you only need to target one specific element use div------>
+                            <small>Price:$50.00</small>
+                        <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td><!-----the content we want to display on the table------->
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+
+        </tr><!---individual row------->
+        <tr>
+            <td>
+                <div class="car-info">
+                    <img src="images/buy-2.jpg">
+                    <div>
+                        <p>Red printed T-shirt</p><!---if you only need to target one specific element use div------>
+                        <small>Price:$110.00</small>
+                    <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td><!-----the content we want to display on the table------->
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+
+    </tr><!---individual row------->
+    <tr>
+        <td>
+            <div class="car-info">
+                <img src="images/buy-3.jpg">
+                <div>
+                    <p>Red printed T-shirt</p><!---if you only need to target one specific element use div------>
+                    <small>Price:$70.00</small>
+                <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+        </td><!-----the content we want to display on the table------->
+        <td><input type="number" value="1"></td>
+        <td>$50.00</td>
+    </tr>
+        </table>
+<div class="total-price">
+        <table>
+<tr>
+    <td>Subtotal</td>
+    <td>$200.00</td>
+</tr>
+<tr>
+    <td>tax</td>
+    <td>$35.00</td>
+</tr>
+<tr>
+    <td>total</td>
+    <td>$235.00</td>
+</tr>
+        </table>
+    </div>
+
+    
+    </div>
+
+
+<!------------footer-------------->
+<div class="footer">
+    <div class="container">
+<!--------------there are four different colunm------------->
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo"><!----So that's why we need to group them up to specified the position---->
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/Asset 5.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Link</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr><!------Horizontal sttraight line------------->
+        <p class ="copyright">Copyright 2020 - Easy Tutorial</p>
+        
+    </div>
+</div>
+<!------js for toggle menu------------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight ="0px";
+
+    function menutoggle()//when you press the menu bottom it will toggle, in this function will add in css property
+    {
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+ 
+</script>
+
+</body>
+</html>

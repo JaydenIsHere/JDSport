@@ -1,0 +1,589 @@
+* {
+  /*This is appy to all the element*/
+  margin: 0%; /*make sure it cover entire screen*/
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /*google font size*/
+}
+.navbar {
+  /*for container , the outline background of navigation bar*/
+  display: flex; /*horizontal*/
+  align-items: center; /*set the default position of element*/
+  padding: 20px;
+}
+
+nav {
+  /*(as a group of element)declare the the entire length of nav bar*/
+  flex: 1;
+  text-align: right; /*push the entire nav bar to the right*/
+}
+nav ul {
+  display: inline-block; /*let the */
+  list-style-type: none;
+}
+
+nav ul li {
+  /*The individual block side by side*/
+  display: inline-block;
+  margin-right: 20px; /*set the space for each individual element (small)*/
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+p {
+  color: #555;
+}
+
+.nav-bar-container {
+  max-width: 1300px; /*page's size won't go beyond 1300px*/
+  margin: auto; /*auto to keep page center*/
+  padding-left: 25px;
+  padding-right: 25px; /*make both logo and bar come to center a bit, have equal space*/
+}
+
+.row {
+  /*item has to include this class in order to make element flexible*/
+  display: flex; /*give element flexibility to move around /key point*/
+  align-items: center; /*Items are positioned at the center of the container*/
+  flex-wrap: wrap; /*The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.*/
+  justify-content: space-around; /*defines how the browser distributes space between and around content items along the main-axis of a flex container*/
+}
+
+.col-2 {
+  flex-basis: 50%; /*so elements in this class will occupied 50% of space*/
+  min-width: 300px; /*I don't know why*/
+}
+
+.col-2 img {
+  /*control the image*/
+  width: 100%; /*scale down the image size*/
+  padding: 50px 0;
+}
+
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px; /*字上下排的間距*/
+  margin: 25px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: yellow;
+  color: rgb(7, 7, 7); /*the word color on the button*/
+  padding: 8px 30px; /*to set space for the orange color area. top buttom 8px, right left 30px*/
+
+  margin: 30px 0; /*set the white space area that surrounding orange button*/
+  border-radius: 20px;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background-color: rgb(237, 240, 106);
+  color: rgb(44, 43, 43);
+}
+.Header {
+  background: radial-gradient(#fff, #3430ff);
+}
+
+.Header .row {
+  margin-top: 70px; /*add the space between logo and p+buttom*/
+}
+
+.categories {
+  margin: 70px 0;
+}
+
+.col-3 {
+  flex-basis: 30%; /*occuppie 30% of the space as we have 3 photo so need 3 column*/
+  min-width: 250px; /*litmit the photo to certain size make photos in line*/
+  margin-bottom: 30px;
+}
+
+.col-3 img {
+  width: 100%;
+}
+
+.small-container {
+  /*fixed the background size, most of section will follow this standard rule of class*/
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.col-4 {
+  flex-basis: 25%; /*we have 4 column,each object will occupied 25% of space, so this is the key thing to decide how big is the object,If the element is not a flexible item, the flex-basis property has no effect.*/
+
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  text-align: center;
+  transition: transform 0.5s;
+}
+
+.col-4 img {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  color: grey;
+  margin: auto 0 80px;
+  position: relative;
+  line-height: 60px; /*this one i not sure*/
+}
+
+.title::after {
+  /*this class is only for one orange line*/
+  content: ''; /*I don't know*/
+  background-color: yellow;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0; /*make the element at the bottom*/
+  left: 50%;
+  transform: translateX(-50%); /*please to understand this*/
+}
+
+.rating .fa {
+  color: #ff523b;
+}
+
+.col-4:hover {
+  transform: translateY(
+    -5px
+  ); /*make element moveable ,when cursor on item it will move towards top by 5 px*/
+}
+/*---------------offer--------------*/
+.offer {
+  background: radial-gradient(#fff, #3430ff);
+  margin-top: 80px;
+  padding: 30px 0;
+}
+
+.col-2 .offer-img {
+  /*must include the parent class in order to */
+  padding: 30px;
+}
+small {
+  color: #555;
+  font-size: 14px;
+}
+
+.testimonial {
+  padding-top: 100px;
+}
+
+.testimonial .col-3 {
+  text-align: center;
+  padding: 40px 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
+  transition: transform 0.7s;
+}
+
+.testimonial .col-3 img {
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.testimonial .col-3:hover {
+  transform: translateY(-10px);
+}
+
+.fa.fa-quote-left {
+  font-size: 34px;
+  color: yellow;
+}
+
+.col-3 p {
+  font-size: 12px;
+  color: #777;
+  margin: 12px 0; /*top buttom 12*/
+}
+
+.testimonial .col-3 h3 {
+  font-weight: 600; /**/
+  color: #555;
+  font-size: 16px;
+}
+/*----brand---------*/
+.brand {
+  margin: 100px auto;
+}
+
+.col-5 {
+  width: 160px;
+}
+
+.col-5 img {
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+.col-5 img:hover {
+  filter: grayscale(0);
+}
+
+/*--------footer--------------*/
+.footer {
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 20px 20px;
+}
+
+.footer p {
+  color: #8a8a8a;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px; /*leave some bottom space for head line*/
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-col-1 {
+  flex-basis: 30%; /*there are 3 element in the footer col-2*/
+}
+
+.footer-col-2 {
+  flex: 1; /*it means it will use up all availible space*/
+  text-align: center;
+}
+
+.footer-col-2 img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%; /*there are 8 to 9 element in this two class, flex-basis define the start legth of element*/
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.app-logo {
+  /*we need some space from the top*/
+  margin-top: 20px;
+}
+.app-logo img {
+  width: 140px;
+}
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20x;
+}
+.copyright {
+  text-align: center;
+}
+
+.menu-icon {
+  /*this only will be apear ono the mobile version*/
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+/*--------------All product page-------------*/
+
+.row-2 {
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+
+select {
+  border: 1px solid #3430ff;
+  padding: 5px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.page-btn {
+  margin: 0 auto 80px; /*add some bottom space*/
+}
+
+.page-btn span {
+  display: inline-block;
+  border: 1px solid #075ecf;
+  width: 40px; /*create box*/
+  height: 40px; /*create box*/
+  margin-left: 10px;
+  text-align: center;
+  line-height: 40px; /*adjust the number position in the box*/
+  cursor: pointer;
+}
+
+.page-btn span:hover {
+  background-color: #3430ff;
+  color: #fff;
+}
+
+/*----------------single prduct detail-------------------*/
+.single-product {
+  margin-top: 80px;
+}
+
+.single-product .col-2 img {
+  padding: 0; /*i don't know*/
+}
+
+.single-product .col-2 {
+  padding: 20px;
+}
+
+.single-product h4 {
+  font-size: 22px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.single-product select {
+  display: block; /*make it above the input */
+  padding: 10px;
+  margin-top: 20px;
+}
+.single-product input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font: 20px;
+  margin-right: 10px;
+  border: 1px solid #3715f8c4;
+}
+
+.single-product input:focus {
+  outline: none;
+}
+
+.single-product .fa {
+  color: yellow;
+  padding-left: 10px;
+}
+
+.small-img-row {
+  /*display felx is key thing to make photo detail effect*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-row .small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+/*--------------cart item-----------------*/
+.cart-page {
+  margin: 80px auto;
+}
+table {
+  width: 100%; /*----take full width of wed page-----*/
+  border-collapse: collapse; /*I don't know this one*/
+}
+
+.car-info {
+  display: flex;
+  flex-wrap: wrap; /*the text will be right next to image*/
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #2d29f5;
+  font-weight: normal;
+}
+
+td {
+  padding: 10px 5px; /*top 10 right 5*/
+}
+
+td input {
+  /*redefine the column of input box*/
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td a {
+  color: rgb(172, 3, 3);
+  font-size: 12px;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.total-price {
+  display: flex; /*make it flexible*/
+  justify-content: flex-end; /*follow the flex-end patterm*/
+}
+.total-price table {
+  border-top: 3px solid #3b5fff; /*one straight line for total*/
+  width: 100%; /*to execute the flex-end patterm*/
+  max-width: 390px; /*adjust the acual length of straight line*/
+}
+td:last-child {
+  text-align: right;
+}
+th:last-child {
+  text-align: right;
+}
+/*-------acount page-------------*/
+.account-page {
+  padding: 50px 0; /*top 50*/
+  background: radial-gradient(#fff, #313ef0); /*styling background*/
+}
+
+.form-container {
+  /*The body of form*/
+  background: #fff;
+  width: 300px; /*define the size of login form*/
+  height: 400px;
+  position: relative; /*as relative parent to control the inside element*/
+  text-align: center;
+  padding: 20px 0; /*top and bottom 20px left and right 0*/
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0);
+  overflow: hidden;
+}
+
+.form-container span {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+
+.form-btn {
+  display: inline-block; /*for each form*/
+}
+
+.form-container form {
+  /*there are two form will be swiching*/
+  max-width: 300px; /*as in the form container(body) is 300px*/
+  padding: 0 20px;
+  position: absolute; /*relate to the form parent, while switch each form will still follow the body*/
+  top: 130px;
+  transition: transform 1s; /*slow down the movement make it sitch smoothly*/
+}
+
+form input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+
+form .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+form .btn:focus {
+  outline: none;
+}
+
+form a {
+  font-size: 14px;
+}
+#LoginForm {
+  left: -300px;
+}
+#RegForm {
+  left: 0;
+}
+#Indicator {
+  /*indicate the current form*/
+  width: 100px;
+  border: none;
+  background: #3b3eff;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(100px); /*toward left*/
+  transition: transform 0.5s;
+}
+
+/*-----------Media query for menu----------------*/
+@media only screen and (max-width: 800px) {
+  /*in this media credit only applicable for screen less than 800px so when you scale down the screen it will execute this media query*/
+  nav ul {
+    position: absolute;
+    top: 100px;
+    left: 0; /*make sure the black color width is full size reach till the end*/
+    background: #333;
+    width: 100%; /*the black color width is full size*/
+    overflow: hidden; /*to hide the element by default*/
+    transition: max-height 0.5s; /*menu drop down speed*/
+  }
+  nav ul li {
+    /*this part i don't know*/
+    display: block; /*when it comes to mobile version it would fold into block */
+    margin-right: 50px; /*all these position is up to your preference*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  .menu-icon {
+    display: block; /*by default it's hide but when screen scale down to 800px it will show up base on block*/
+    cursor: pointer;
+  }
+}
+
+/*------Media query for less than 600 screen size----*/
+@media only screen and (max-width: 600px) {
+  .row {
+    text-align: center;
+  }
+  .col-2,
+  .col-3,
+  .col-4 {
+    flex-basis: 100%; /*when it comes to mobile version the screen will show one element one page*/
+  }
+  .single-product .row {
+    text-align: left;
+  }
+  .single-product .col-2 {
+    padding: 20px 0;
+  }
+  .single-product h1 {
+    font-size: 26px; /*scale down the font size when it comes to mobile screen*/
+    line-height: 20px; /*keep the space neat*/
+  }
+  .car-info p {
+    display: none;
+  }
+}

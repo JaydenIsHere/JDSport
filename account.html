@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width= device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecommerce.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com"><!--google font size-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>All Product - RedStore | Ecommerce web design</title>
+</head>
+<body>
+    <!--------------------Header & background buttom--------------------------> 
+    <div class = "nav-bar-container"><!--the container of nav bar-->
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/Asset 4.png" alt="logo" width="125 px"></a><!--Logo will be on top left coner-->
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="product.html">product</a> </li>
+                    <li> <a href="#">about</a> </li>
+                    <li> <a href="#">Contact</a> </li>
+                    <li> <a href="account.html">Account</a> </li>
+                </ul>
+            </nav>
+         <a href="cart.html"><img src="images/cart.png" width ="30px" height="30px" ></a>   
+            <img src="images/menu.png" class ="menu-icon" onclick="menutoggle()">
+           </div> 
+
+</div>
+
+<!------------Account page-------------->
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2"><!---one big image--->
+<img src="images/image1.png" width="100%"><!---because there are two div group so each group use up half of screen--->
+            </div>
+            <div class="col-2"><!---login form and registration form--->
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick ="Login()">Login </span><!---this is indicator btn and clickable and moveable--->
+                        <span onclick ="Register()">Register </span>
+                        <hr id="Indicator">
+                        <div>
+                            <form id="LoginForm"><!---for login and id here is a hook for me in javacript to refer to this form--->
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type=" submit" class = "btn">Log in</button>
+                                <a href="">Forgot Password</a>
+                            </form>
+                            <form id ="RegForm"><!---for registration and id here is a hook for me in javacript to refer to this form--->
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="email">
+                                <input type="password" placeholder="Password">
+                                <button type=" submit" class = "btn">Register</button>
+                             
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------footer-------------->
+<div class="footer">
+    <div class="container">
+<!--------------there are four different colunm------------->
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo"><!----So that's why we need to group them up to specified the position---->
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/Asset 5.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Link</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr><!------Horizontal sttraight line------------->
+        <p class ="copyright">Copyright 2020 - Jayden Design</p>
+        
+    </div>
+</div>
+<!------js for toggle menu------------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight ="0px";
+
+    function menutoggle()//when you press the menu bottom it will toggle, in this function will add in css property
+    {
+        if(MenuItems.style.maxHeight == "0px")//if click menu 
+        {
+            MenuItems.style.maxHeight = "200px";//the menu will open to maximum 200px
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";//if not go back to 0px
+        }
+    }
+ 
+</script>
+<!------js for toggle form------------->
+<script>
+var LoginForm = document.getElementById("LoginForm")//form id
+var RegForm = document.getElementById("RegForm")//form id
+var Indicator = document.getElementById("Indicator")//indicator
+
+function Register(){//when you click on the indicator btn and what will happen ?
+    RegForm.style.transform = "translateX(0px)";//remain same position
+    LoginForm.style.transform = "translateX(0px)";
+    Indicator.style.transform = "translateX(100px)";
+}
+function Login(){//when you click on the indicator btn and what will happen ?
+    RegForm.style.transform = "translateX(300px)";
+    LoginForm.style.transform = "translateX(300px)";//change position
+    Indicator.style.transform = "translateX(0px)";
+
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>
